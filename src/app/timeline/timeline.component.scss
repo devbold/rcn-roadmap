@@ -33,3 +33,49 @@
     background-color: $tertiary;
   }
 }
+
+.title{
+  margin-top: -10px;
+  font-size: 36px;
+  text-align: center;
+  @extend %font-black;
+}
+
+p{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  color: #404040;
+}
+
+.icon-block{
+  margin: 0 auto;
+  margin-top: 40px;
+  ul{
+    li{
+      width: 25%;
+      text-align: center;
+      display: inline-block;
+      svg{
+        font-size: 3em;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px){
+  p{
+    width: 650px;
+  }
+  .icon-block{
+    width: 650px;
+    ul{
+      li{
+        svg{
+          font-size: 4em;
+        }
+      }
+    }
+  }
+}
