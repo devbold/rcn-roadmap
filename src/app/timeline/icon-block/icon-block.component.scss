@@ -1,3 +1,5 @@
+@import '../../../scss/_variables.scss'; //variables
+
 .icon-block{
   margin: 0 auto;
   margin-top: 40px;
@@ -18,8 +20,16 @@
     width: 650px;
     ul{
       li{
-        svg{
-          font-size: 3.8em;
+        a{
+          &:hover{
+            svg{
+              color: $primary;
+            }
+          }
+          svg{
+            font-size: 3.8em;
+            @include transition;
+          }
         }
       }
     }
