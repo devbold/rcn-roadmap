@@ -1,0 +1,27 @@
+.icon-block{
+  margin: 0 auto;
+  margin-top: 40px;
+  ul{
+    li{
+      width: 25%;
+      text-align: center;
+      display: inline-block;
+      svg{
+        font-size: 3em;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .icon-block{
+    width: 650px;
+    ul{
+      li{
+        svg{
+          font-size: 3.8em;
+        }
+      }
+    }
+  }
+}

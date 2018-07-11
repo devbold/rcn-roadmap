@@ -1,0 +1,14 @@
+p{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  color: #404040;
+}
+
+
+@media (min-width: 768px){
+  p{
+    width: 650px;
+  }
+}
