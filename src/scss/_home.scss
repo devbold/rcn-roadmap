@@ -1,0 +1,81 @@
+
+// -------------------------
+// HOME
+// -------------------------
+
+body{
+  font-size: 16px;
+  text-decoration: none;
+  color: #5a5a5a;
+  background-color: #f4f3f3;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+h1,h2,h3,h4,h5{
+  font-size: 16px;
+  line-height: 0.8;
+}
+h1{
+  font-size: 38px;
+  color: $tertiary;
+}
+p {
+  line-height: 1.4;
+  font-size: 16px;
+  color: $tertiary;
+  margin: 0;
+}
+ul, ol{
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  &:focus{
+    color: #404040;
+  }
+  &:hover{
+    color: $primary;
+  }
+}
+.container-fluid{
+  margin: 0;
+}
+#page-content-wrapper{
+  position: relative;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+@media (min-width: 768px) {
+}
+
+
+// HOME CONSTRUCTION
+.brand-img-container{
+  padding: 50px 0;
+  img{
+    width: 150px;
+    position: absolute; top: 50%; left: 50%; @include transform(translate(-50%, -50%));
+    // position: absolute; top: 0; left: 50%; @include transform(translate(-50%, 0));
+  }
+}
+
+// HOME RESPONSIVE
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 768px) {
+
+  
+}
+

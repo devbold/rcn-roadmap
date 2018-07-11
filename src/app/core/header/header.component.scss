@@ -1,0 +1,15 @@
+@import '../../../scss/_variables.scss'; //variables
+
+.header-container{
+  background-color: $primary;
+}
+ul{
+  max-width: 600px;
+  margin: 0 auto;
+  li{
+    width: 16.6%;
+    padding: 15px 0;
+    display: inline-block;
+    text-align: center;
+  }
+}

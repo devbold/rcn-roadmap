@@ -1,0 +1,13 @@
+
+// -------------------------
+// TRANSITIONS
+// -------------------------
+
+.trasition{
+	// Default transition set by viariable
+  @include transition;
+}
+.cd-img, .dvd-img {
+  @include transition(all 0.6s ease-out);
+}
+

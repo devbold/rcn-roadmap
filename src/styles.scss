@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+// Custom Custom Style
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,500,600,700,800,900'); // Google Fonts
+@import './scss/_spaces.scss', //spaces
+        './scss/_variables.scss', //variables
+        './scss/_mixins.scss', //mixins
+        './scss/_colors.scss', //colors
+        './scss/_helpers.scss', //helpers
+        './scss/_fonts.scss'; //fonts
+
+
+body{
+  margin: 0;
+}
+
+.img-container{
+  padding: 50px 0;
+  img{
+    width: 180px;
+    margin: 0 auto;
+  }
+}
