@@ -7,21 +7,19 @@ ul{
   max-width: 600px;
   margin: 0 auto;
   li{
-    width: 16.6%;
-    padding: 15px 0;
-    display: inline-block;
-    text-align: center;
-    outline: 0px;
     cursor: pointer;
+    outline: 0px;
+    width: 16.6%;
     font-size: 14px;
+    color: $secondary;
+    padding: 15px 0;
+    text-align: center;
     @extend %font-bold;
-    border-top: 3px solid transparent;
+    display: inline-block;
     border-bottom: 3px solid transparent;
     &:hover{
+      border-bottom: 3px solid black;
       @include transition;
-      // color: $tertiary;
-      border-top: 3px solid white;
-      border-bottom: 3px solid white;
     }
   }
 }
