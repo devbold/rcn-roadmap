@@ -11,5 +11,17 @@ ul{
     padding: 15px 0;
     display: inline-block;
     text-align: center;
+    outline: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    @extend %font-bold;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    &:hover{
+      @include transition;
+      // color: $tertiary;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+    }
   }
 }
