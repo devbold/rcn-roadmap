@@ -1,14 +1,16 @@
 // Angular Core
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+// App Module
+import { TimelineModule } from '../timeline/timeline.module';
 // App Component
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    TimelineModule,
   ],
   exports: [
     HeaderComponent,

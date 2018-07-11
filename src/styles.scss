@@ -13,8 +13,15 @@ body{
   margin: 0;
   position: relative;
   font-family: 'Raleway', sans-serif;
-  background-color: $secondary;
   color: $tertiary;
+  background-color: $secondary;
+}
+
+.main-title{
+  font-size: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  @extend %font-black;
 }
 
 .img-container{
