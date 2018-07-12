@@ -10,6 +10,7 @@ import { ParagraphComponent } from './paragraph/paragraph.component';
 import { IconBlockComponent } from './icon-block/icon-block.component';
 import { MainTitleComponent } from './main-title/main-title.component';
 import { ArrowComponent } from './arrow/arrow.component';
+import { SubtitleComponent } from './subtitle/subtitle.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { ArrowComponent } from './arrow/arrow.component';
   exports: [
     TimelineComponent,
   ],
-  declarations: [TimelineComponent, IndexCircleComponent, TimeLineComponent, TitleComponent, ParagraphComponent, IconBlockComponent, MainTitleComponent, ArrowComponent]
+  declarations: [TimelineComponent, IndexCircleComponent, TimeLineComponent, TitleComponent, ParagraphComponent, IconBlockComponent, MainTitleComponent, ArrowComponent, SubtitleComponent]
 })
 export class TimelineModule { }

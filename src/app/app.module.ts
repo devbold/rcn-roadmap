@@ -9,10 +9,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 
-// App Component
-// App Services
-// App Directives
-
 @NgModule({
   declarations: [
     AppComponent

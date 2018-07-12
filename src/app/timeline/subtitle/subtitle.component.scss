@@ -1,0 +1,8 @@
+@import '../../../scss/_variables.scss'; //variables
+
+.subtitle{
+  margin-top: -10px;
+  font-size: 36px;
+  text-align: center;
+  @extend %font-light;
+}
