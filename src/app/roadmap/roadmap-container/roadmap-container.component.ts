@@ -13,7 +13,7 @@ export class RoadmapContainerComponent implements OnInit {
   //   {obj: 'This is an object of array[2]'},
   // ];
 
-  roadmap: any = [
+  oRoadmap: any = [
     {
       "timelineComponent": [
         {
@@ -34,10 +34,14 @@ export class RoadmapContainerComponent implements OnInit {
     }
   ]
   
+  example = this.oRoadmap;
+
   constructor() { }
 
   ngOnInit() {
-    console.log(this.roadmap);
+    console.log(this.oRoadmap);
+    console.log(this.oRoadmap[0].timelineComponent[0]);
+    console.log(this.example);
   }
 
 }

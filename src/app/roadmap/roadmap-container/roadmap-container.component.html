@@ -1,18 +1,13 @@
 <!-- <p>roadmap-container works!</p> -->
 
-<ul *ngFor='let priority of roadmap'>
-  <!-- <li class="margintop20"> {{ i | json }}</li> -->
-  <li class="margintop20"> 
-    {{ priority.timelineComponent | json }}
-    <div>{{ priority.timelineComponent[priority].mainTitle | json }}</div>
-    <div>{{ priority.timelineComponent[priority].timeline | json }}</div>
-  </li>
-  <li class="margintop20"> 
-    <div>{{ priority.timelineComponent[priority].mainTitle | json }}</div>
-    <div>{{ priority.timelineComponent[priority].timeline | json }}</div>
+<ul *ngFor='let priority of oRoadmap'>
+  <li class="margintop20" *ngFor='let timelineComponent of oRoadmap[1]'> 
+    <!-- {{ priority.timelineComponent | json }} -->
+    <div>{{ priority.timelineComponent[0].mainTitle | json }}</div>
+    <div>{{ priority.timelineComponent[0].timeline | json }}</div>
   </li>
 </ul>
 
-<!-- <div class="asd">{{ roadmap | json }}</div>
-<div class="asd">{{ roadmap[0] | json }}</div>
-<div class="asd">{{ roadmap[0].obj | json }}</div> -->
+<!-- <div class="asd">{{ oRoadmap | json }}</div>
+<div class="asd">{{ oRoadmap[0] | json }}</div>
+<div class="asd">{{ oRoadmap[0].obj | json }}</div> -->
