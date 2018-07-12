@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
+import { RoadmapModule } from './roadmap/roadmap.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CoreModule } from './core/core.module';
     HttpModule,
     AppRoutingModule,
     CoreModule,
+    RoadmapModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

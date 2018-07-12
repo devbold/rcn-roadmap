@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // App Module
 import { TimelineModule } from '../timeline/timeline.module';
+import { RoadmapModule } from '../roadmap/roadmap.module';
 // App Component
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +15,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     TimelineModule,
+    RoadmapModule,
   ],
   exports: [
     HeaderComponent,
