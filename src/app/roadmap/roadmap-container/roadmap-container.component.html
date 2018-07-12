@@ -1,7 +1,10 @@
-<p>
-  roadmap-container works!
-</p>
+<!-- <p>roadmap-container works!</p> -->
 
-<div class="asd">{{ roadmap | json }}</div>
+<ul *ngFor='let i of roadmap'>
+  <li class="margintop20"> {{ i | json  }}</li>
+  <!-- <li class="margintop20"> {{ i.timelineComponent | json  }}</li> -->
+</ul>
+
+<!-- <div class="asd">{{ roadmap | json }}</div>
 <div class="asd">{{ roadmap[0] | json }}</div>
-<div class="asd">{{ roadmap[0].obj | json }}</div>
+<div class="asd">{{ roadmap[0].obj | json }}</div> -->
