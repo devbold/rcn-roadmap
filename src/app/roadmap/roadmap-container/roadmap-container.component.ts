@@ -17,7 +17,7 @@ export class RoadmapContainerComponent implements OnInit {
     {
       "timelineComponent": [
         {
-          "mainTitle": 'DApp SDK', "unabled": true,
+          "mainTitle": 'DApp SDK 1', "unabled": true,
           "timeLine": true,
           "title": 'DApp SDK'
         }
@@ -26,7 +26,7 @@ export class RoadmapContainerComponent implements OnInit {
     {
       "timelineComponent": [
         {
-          "mainTitle": 'DApp SDK', "unabled": true,
+          "mainTitle": 'DApp SDK 2', "unabled": true,
           "timeLine": true,
           "title": 'DApp SDK'
         }
