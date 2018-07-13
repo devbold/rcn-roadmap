@@ -7,41 +7,112 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoadmapContainerComponent implements OnInit {
 
-  // roadmap: any[] = [
-  //   {obj: 'This is an object of array[0]'},
-  //   {obj: 'This is an object of array[1]'},
-  //   {obj: 'This is an object of array[2]'},
-  // ];
-
   oRoadmap: any = [
     {
-      "timelineComponent": [
+      "mainTitle": 'RCN ROADMAP',
+      "index": 1,
+      listComponent: [
         {
-          "mainTitle": 'DApp SDK 1', "unabled": true,
-          "timeLine": true,
-          "title": 'DApp SDK'
+          title: 'DApp SDK',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam.',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
+        },
+        {
+          title: 'RCN Node',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
+        },
+        {
+          title: 'Python SDK',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
+        },
+        {
+          title: 'Java SDK',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
         }
       ]
     },
     {
-      "timelineComponent": [
+      "mainTitle": 'RCN V3',
+      "index": 2,
+      listComponent: [
         {
-          "mainTitle": 'DApp SDK 2', "unabled": true,
-          "timeLine": true,
-          "title": 'DApp SDK'
+          title: 'RClaim Registry ERC 939',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam.',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
+        },
+        {
+          title: 'Installments',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
+        },
+        {
+          title: 'Loans Building Matrix',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
+        }
+      ]
+    },
+    {
+      "mainTitle": 'Gateways',
+      "index": 3,
+      listComponent: [
+        {
+          title: 'Gateways',
+          subtitle: '(Onraps / Oframps)',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam.',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
+        },
+        {
+          title: 'Installments',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
+        },
+        {
+          title: 'Loans Building Matrix',
+          paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi, consequuntur culpa distinctio error nostrum odio. Repellendus eveniet sapiente perspiciatis qui, odit praesentium neque blanditiis, non quos voluptates minima hic nobis, aut dicta beatae cum a nesciunt quidem veniam vel corporis voluptatibus quam sequi. Excepturi earum incidunt sed modi numquam',
+          iconBlock: [
+            {name: 'pdf',href: 'www'},
+            {name: 'github',href: 'www'}
+          ]
         }
       ]
     }
   ]
-  
-  example = this.oRoadmap;
 
   constructor() { }
 
   ngOnInit() {
     console.log(this.oRoadmap);
-    console.log(this.oRoadmap[0].timelineComponent[0]);
-    console.log(this.example);
   }
 
 }
