@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 // App Component
 import { RoadmapContainerComponent } from './roadmap-container/roadmap-container.component';
 // App Services
-// App Directives
+
 
 @NgModule({
   imports: [
