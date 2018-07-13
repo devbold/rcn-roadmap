@@ -39,13 +39,10 @@
   @extend %absolute-center;
 }
 
-.roadmap{
-  .arrow{
-    &:nth-child(1){
-      display: none;
-    }
-  }
+.arrow-0{
+  display: none;
 }
+
 .time-line{
   margin: 20px 0 ;
   .line {

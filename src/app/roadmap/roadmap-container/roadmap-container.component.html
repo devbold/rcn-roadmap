@@ -1,40 +1,42 @@
 
-<div class="roadmap" *ngFor='let priority of oRoadmap'>
-  <div class="time-line arrow">
-    <div class="line"></div>
-    <div class="circle"></div>
-    <div class="line"></div>
-    <div class="circle"></div>
-    <div class="line"></div>
-    <div class="arrow"></div>
-  </div>
-  <div class="main-title">{{ priority.mainTitle }}</div>
+<div class="roadmap">
+  <div class="priority" *ngFor="let priority of oRoadmap; index as i" [attr.data-index]='i'>
 
-  <div class="index-circle">
-    <div class="index">{{ priority.index }}</div>
-  </div>
-
-  <div *ngFor='let component of priority.listComponent'> 
-
-    <div class="time-line">
+    <div class="time-line arrow-{{i}}">
       <div class="line"></div>
       <div class="circle"></div>
       <div class="line"></div>
       <div class="circle"></div>
       <div class="line"></div>
+      <div class="arrow"></div>
+    </div>
+    <div class="main-title">{{ priority.mainTitle }}</div>
+
+    <div class="index-circle">
+      <div class="index">{{ priority.index }}</div>
     </div>
 
-    <div class="title">{{ component.title }}</div>
-    <div class="subtitle">{{ component.subtitle }}</div> 
-    <p>{{ component.paragraph }}</p>
+    <div class="component" *ngFor='let component of priority.listComponent'> 
+      <div class="time-line">
+        <div class="line"></div>
+        <div class="circle"></div>
+        <div class="line"></div>
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
 
-    <div class="icon-block">
-      <ul>
-        <li><a href="#"><i class="far fa-file-pdf"></i></a></li>
-        <li><a href="#"><i class="fab fa-github"></i></a></li>
-        <li><a href="#"><i class="fas fa-search"></i></a></li>
-        <li><a href="#"><i class="far fa-file-code"></i></a></li>
-      </ul>
+      <div class="title">{{ component.title }}</div>
+      <div class="subtitle">{{ component.subtitle }}</div> 
+      <p>{{ component.paragraph }}</p>
+
+      <div class="icon-block">
+        <ul>
+          <li><a href="#"><i class="far fa-file-pdf"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fas fa-search"></i></a></li>
+          <li><a href="#"><i class="far fa-file-code"></i></a></li>
+        </ul>
+      </div>
     </div>
 
   </div>
