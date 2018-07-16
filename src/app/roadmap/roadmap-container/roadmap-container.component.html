@@ -1,5 +1,5 @@
 <div class="roadmap">
-  <div class="priority" *ngFor="let priority of oRoadmap; index as i" [attr.data-index]='i'>
+  <section id="{{i}}" class="priority" *ngFor="let priority of oRoadmap; index as i" [attr.data-index]='i'>
 
     <div class="time-line arrow-{{i}}"><div class="line"></div><div class="circle"></div><div class="line"></div><div class="circle"></div><div class="line"></div><div class="arrow"></div></div>
     <div class="main-title">{{ priority.mainTitle }}</div>
@@ -24,5 +24,5 @@
       </div>
     </div>
 
-  </div>
+  </section>
 </div>
