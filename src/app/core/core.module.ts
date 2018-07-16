@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 
 // App Services
+import { ServerService } from '../services/server.service';
+
 // App Directives
 
 @NgModule({
@@ -18,6 +20,7 @@ import { HomeComponent } from './home/home.component';
   exports: [
     HeaderComponent,
   ],
+  providers: [ServerService],
   declarations: [HeaderComponent, HomeComponent]
 })
 export class CoreModule { }
