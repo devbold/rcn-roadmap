@@ -87,11 +87,18 @@ p{
   ul{
     text-align: center;
     li{
-      width: 25%;
+      width: 100px;
+      height: 45px;
       text-align: center;
       display: inline-block;
       svg{
         font-size: 3em;
+      }
+      img{
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 50%;
       }
     }
   }

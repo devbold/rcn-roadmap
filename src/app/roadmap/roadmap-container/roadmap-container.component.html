@@ -15,10 +15,17 @@
       <div class="subtitle">{{ component.subtitle }}</div> 
       <p>{{ component.paragraph }}</p>
 
-      <div class="icon-block" >
+      <div class="icon-block">
         <ul>
           <li *ngFor='let icon of component.iconBlock'>
-            <a href="{{ icon.href }}" target="_blank"><i class="{{ icon.class }}"></i></a>
+            <a href="{{ icon.href }}" target="_blank">
+              <i class="{{ icon.class }}"></i>
+            </a>
+          </li>
+          <li *ngFor='let team of component.teamBlock'>
+            <a href="{{ team.href }}" target="_blank">
+              <img src="{{ team.src }}">
+            </a>
           </li>
         </ul>
       </div>
