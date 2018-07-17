@@ -4,16 +4,7 @@
     <div class="time-line arrow-{{i}}"><div class="line"></div><div class="circle"></div><div class="line"></div><div class="circle"></div><div class="line"></div><div class="arrow"></div></div>
     <div class="main-title">{{ priority.mainTitle }}</div>
 
-    <button mat-raised-button
-    matTooltip="Info about the action"
-    aria-label="Button that displays a tooltip when focused or hovered over">
-      Action
-    </button>
-
-    <div class="index-circle"
-      mat-raised-button
-      matTooltip="Info about the action"
-      aria-label="Button that displays a tooltip when focused or hovered over">
+    <div class="index-circle">
       <div class="index">{{ priority.index }}</div>
     </div>
 
@@ -27,12 +18,16 @@
       <div class="icon-block">
         <ul>
           <li *ngFor='let icon of component.iconBlock'>
-            <a href="{{ icon.href }}" target="_blank">
+            <a href="{{ icon.href }}" target="_blank"
+              matTooltip="Github Repository"
+              aria-label="Github tooltip">
               <i class="{{ icon.class }}"></i>
             </a>
           </li>
           <li *ngFor='let team of component.teamBlock'>
-            <a href="{{ team.href }}" target="_blank">
+            <a href="{{ team.href }}" target="_blank"
+              matTooltip="Team Member: {{ team.member }}"
+              aria-label="Team Member tooltip">
               <img src="{{ team.src }}">
             </a>
           </li>
