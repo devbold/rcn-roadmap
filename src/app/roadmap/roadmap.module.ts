@@ -1,14 +1,16 @@
 // Angular Core
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+// App Module
+import { MaterialModule } from '../material/material.module';
 // App Component
 import { RoadmapContainerComponent } from './roadmap-container/roadmap-container.component';
-// App Services
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
   ],
   exports: [
     RoadmapContainerComponent

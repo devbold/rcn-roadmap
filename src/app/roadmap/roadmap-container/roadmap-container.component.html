@@ -4,7 +4,16 @@
     <div class="time-line arrow-{{i}}"><div class="line"></div><div class="circle"></div><div class="line"></div><div class="circle"></div><div class="line"></div><div class="arrow"></div></div>
     <div class="main-title">{{ priority.mainTitle }}</div>
 
-    <div class="index-circle">
+    <button mat-raised-button
+    matTooltip="Info about the action"
+    aria-label="Button that displays a tooltip when focused or hovered over">
+      Action
+    </button>
+
+    <div class="index-circle"
+      mat-raised-button
+      matTooltip="Info about the action"
+      aria-label="Button that displays a tooltip when focused or hovered over">
       <div class="index">{{ priority.index }}</div>
     </div>
 
