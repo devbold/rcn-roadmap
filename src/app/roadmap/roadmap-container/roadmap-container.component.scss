@@ -93,7 +93,7 @@ p{
       text-align: center;
       display: inline-block;
       svg{
-        font-size: 3em;
+        font-size: 3.8em;
       }
       img{
         width: 50px;
@@ -128,7 +128,6 @@ p{
             }
           }
           svg{
-            font-size: 3.8em;
             @include transition;
           }
         }
